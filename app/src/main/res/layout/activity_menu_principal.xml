@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context="com.example.lily.ejercicio225.MenuPrincipal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnTrabajadores"
+            android:layout_width="174dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center"
+            android:background="@drawable/trabajador" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnObras"
+            android:layout_width="174dp"
+            android:layout_height="176dp"
+            android:background="@drawable/cliente"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="72dp"
+            android:layout_height="66dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/exit" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

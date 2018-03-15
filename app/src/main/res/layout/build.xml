@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e4b187"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Nombre"
+                android:textColor="#5e4229"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname"
+                android:padding="5dp"
+                android:text="Direccion"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtCelular"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstname"
+                android:padding="5dp"
+                android:text="Celular"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_below="@+id/middlename"
+                android:padding="5dp"
+                android:text="Mail"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtDescripcionObra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_below="@+id/middlename"
+                android:padding="5dp"
+                android:text="DescripcionObra"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtMonto"
+                android:layout_width="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middlename"
+                android:padding="5dp"
+                android:text="Monto"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middlename"
+                android:padding="5dp"
+                android:text="Estado"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/middlename"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/btnDelete"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/mod"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/middlename"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/borrar"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
